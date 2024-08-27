@@ -1,0 +1,29 @@
+{
+  "name": "js-workshop",
+  "version": "1.0.0",
+  "description": "javascript test driven workshop",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:exercise": "cross-env EXERCISE_NAME=$npm_config_name jest $npm_config_name/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waditwaiba/js-workshop.git"
+  },
+  "author": "wadi twaiba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waditwaiba/js-workshop/issues"
+  },
+  "homepage": "https://github.com/waditwaiba/js-workshop#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "cross-env": "^7.0.3"
+  }
+}
