@@ -4,6 +4,9 @@
   * Task Complexity: 1 of 5 
 */
 const fill = (arraySize, value) => {
+  let output = [];
+  fill.apply(arraySize, value)
+  return output;
 }
 
 module.exports = fill;

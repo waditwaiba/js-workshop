@@ -6,7 +6,8 @@
  * @param {Array} array2 - array2.
  * @returns {Array}
  */
-const difference = (array1, array2) => {
+const difference = (array1, array2){
+
     throw new Error('Put your solution here');
 }
 const ar1 = [2, 1];
