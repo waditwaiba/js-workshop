@@ -4,6 +4,8 @@
   * Task Complexity: 1 of 5
 */
 const chop = (str, chunk) => {
+  if (str == null)
+  return []
 }
 
 module.exports = chop;
