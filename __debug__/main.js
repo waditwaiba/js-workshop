@@ -4,6 +4,7 @@ const camelize = (str) => {
   for (const word of words) {
     let formattedWord = "";
     for (let i = 0; i < word.length; i++) {
+      console.log("in")
       if (i === 0) {
         formattedWord = formattedWord + word[i].toUpperCase();
       } else {
