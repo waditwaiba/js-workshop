@@ -1,37 +1,42 @@
 const add = function (n1, n2) {
-    return n1 + n2;
-
+    return n1+n2;
 };
 
 const subtract = function (n1, n2) {
-    return n1 - n2;
-
+    return n1-n2;
 };
 
-const sum = function () {
-
+const sum = function (num) {
+    let result=0;
+    for (let i = 0; i < array.length; i++) {
+        result += num[i];
+    }
+    return result
 };
 
 const multiply = function (number) {
-    let result = 1
-    for (let n of number) {
-        result = result * n
-    }
-    return result
-
+    // let sum;
+    // const result = number.forEach(element => element*sum);
+    const result = number.reduce((accu,currentValue)=>accu*currentValue,1)
+    return result;
 };
 
 const power = function (n1, n2) {
-    return n1 ** n2;
-
-
+    return n1**n2;
 };
 
 const factorial = function (num) {
-    if (num == 0)
+    // let result=1;
+    // for (let i = 2; i < num; i++) {
+    //     result=result*i;
+    // }
+    // return result;
+    
+    if (num<=1) {
         return 1;
-    return num * factorial(num - 1);
-
+    }
+    return num * factorial(num-1);
+    
 };
 
 // Do not edit below this line

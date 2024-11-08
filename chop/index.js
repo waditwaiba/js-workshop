@@ -4,7 +4,7 @@
   * Task Complexity: 1 of 5
 */
 const chop = (str, chunk) => {
-
+    
 }
 
 module.exports = chop;

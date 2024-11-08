@@ -5,10 +5,10 @@
 */
 const fill = (arraySize, value) => {
   let result = [];
-  for(let i = 0 ;i < arraySize; i++){
+  for (let i = 0; i < arraySize; i++) {
     result.push(value);
   }
-  return result;
+  return result
 }
 
 module.exports = fill;
