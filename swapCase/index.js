@@ -4,6 +4,7 @@
   * Task Complexity: 1 of 5
 */
 const swapCase = (str) => {
+  return str.split("").map((char) => char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase()).join("");
 }
 
 module.exports = swapCase;
