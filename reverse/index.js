@@ -6,7 +6,7 @@
   * @returns {Array} 
 */
 const reverse = (array) => {
-    throw new Error('Put your solution here');
+    return array.reverse();
 }
 
 
