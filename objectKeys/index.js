@@ -6,7 +6,7 @@
  * @returns {Array} - Returns the array of property names.
  */
 const keys = (data) => {
-    throw new Error('Put your solution here');
+    return Object.keys(data);
 }
 
 module.exports = keys;
