@@ -6,7 +6,7 @@
  * @returns {Array}
  */
 const values = (data) => {
-    throw new Error('Put your solution here');
+    return Object.values(data)
 }
 
 module.exports = values;
