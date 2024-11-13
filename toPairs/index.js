@@ -6,7 +6,7 @@
   * @returns {Array}
 */
 const toPairs = (obj) => {
-    throw new Error('Put your solution here');
+  return Object.entries(obj)
 }
 
 module.exports = toPairs
