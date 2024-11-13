@@ -4,6 +4,7 @@
   * Task Complexity: 1 of 5
 */
 const snakeCase = (str) => {
+  return str.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-').replace(/^-+|-+$/g, '');
 }
 
 module.exports = snakeCase
