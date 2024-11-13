@@ -6,6 +6,11 @@
   * Task Complexity: 1 of 5
 */
 const sumOfPairs = (num1, num2) => {
+  let result = [];
+  for (let i = 0; i < Math.max(num1.length, num2.length); i++) {
+    result.push((num1[i] || 0) + (num2[i] || 0));
+  }
+  return result
 }
 
 module.exports = sumOfPairs;
