@@ -7,9 +7,8 @@
  * @returns {Array}
  */
 const findIndex = (array, element) => {
-    throw new Error('Put your solution here');
+    return array.indexOf(element);
 }
-/* DONT USE INDEX OF METHOD */
 
 
 module.exports = findIndex;
