@@ -7,7 +7,7 @@
  * @returns {Object}
  */
 const pick = (data, paths) => {
-    throw new Error('Put your solution here');
+    return Object.fromEntries(Object.entries(data).filter((k) => paths.includes(k[0])))
 }
 
 module.exports = pick;
