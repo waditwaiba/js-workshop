@@ -7,7 +7,11 @@
  * @returns {Array}
  */
 const drop = (array, elementsToDrop) => {
-    throw new Error('Put your solution here');
+    if (elementsToDrop >= 0) {
+        return array.slice(elementsToDrop);
+    } else {
+        return array;
+    }
 }
 
 module.exports = drop;
