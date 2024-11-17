@@ -4,6 +4,13 @@
   * Task Complexity: 1 of 5
 */
 const printEvenNumbers = (size) => {
+  let Result = []
+  for (let i = 0; i < size; i++) {
+    if (i % 2 == 0) {
+      Result.push(i)
+    }
+  }
+  console.log(Result.join(","));
 }
 
 module.exports = printEvenNumbers
