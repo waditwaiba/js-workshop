@@ -7,7 +7,7 @@
  * @returns {Array}
  */
 const pull = (array, values) => {
-    throw new Error('Put your solution here');
+    return array.filter(num => !values.includes(num))
 }
 
 module.exports = pull;
