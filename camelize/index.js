@@ -4,20 +4,20 @@
   * Task Complexity: 1 of 5
 */
 const camelize = (str) => {
-  const words = str.split(" ");
-  const formattedWords = []
+  let words = str.split(" ")
+  // ["JavaScript","exercises"]
+  let formattedWords = [];
   for (const word of words) {
-    let formattedWord = ""
+    let formattedWord = "";
     for (let i = 0; i < word.length; i++) {
       if (i === 0) {
-        formattedWord = formattedWord + word[i].toUpperCase()
+        formattedWord += word[i].toUpperCase();
       } else {
-        formattedWord = formattedWord + word[i].toLowerCase()
+        formattedWord += word[i].toLowerCase();
       }
     }
-    formattedWords.push(formattedWord)
+    formattedWords.push(formattedWord);
   }
-
   return formattedWords.join("")
 }
 
