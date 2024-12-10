@@ -7,7 +7,9 @@
  * @returns {Object}
  */
 const omit = (data, paths) => {
-    throw new Error('Put your solution here');
+    let Result = Object.fromEntries(Object.entries(data).filter((k) => !paths.includes(k[0])))
+    console.log(Result);
+    return Result
 }
 
 module.exports = omit
