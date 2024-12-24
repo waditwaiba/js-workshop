@@ -16,7 +16,7 @@ describe("findIndex", () => {
     expect(findIndex(arrayWithDuplicates, "b")).toBe(1);
   });
 
-  test("should work with arrays of numbers", () => {
+  test("should  work with arrays of numbers", () => {
     const numberArray = [1, 2, 3, 4, 5];
     expect(findIndex(numberArray, 3)).toBe(2);
   });

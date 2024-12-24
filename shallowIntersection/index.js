@@ -7,7 +7,7 @@
   * @returns {Object} 
 */
 const intersection = (firstObject, secondObject) => {
-    throw new Error(`put your solution here ${firstObject}, ${secondObject}`);
+  return firstObject.filter(el => secondObject.includes(el))
 };
 
 module.exports = intersection;

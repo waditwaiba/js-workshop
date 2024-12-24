@@ -5,7 +5,10 @@
  */
 
 const reverseString = function (string) {
-    return string.split("").reverse().join("");  
+    console.log("string.split('')", string.split(""))
+    console.log("string.split('').reverse()", string.split("").reverse())
+    console.log("string.split('').reverse().join('')", string.split("").reverse().join(""))
+    return string.split("").reverse().join("");
 };
 
 // Do not edit below this line

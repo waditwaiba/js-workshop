@@ -6,7 +6,7 @@
  * @returns {Object} - Returns the new inverted object.
  */
 const invert = (data) => {
-    return Object.fromEntries(Object.entries(data).map(([key,value])=>[value,key]))
+    return Object.fromEntries(Object.entries(data).map(([key, value]) => [value, key]))
 }
 
 module.exports = invert;

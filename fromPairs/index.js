@@ -6,7 +6,6 @@
   * @returns {Array} 
 */
 const fromPairs = (array) => {
-    throw new Error('Put your solution here');
 }
 
 module.exports = fromPairs;
