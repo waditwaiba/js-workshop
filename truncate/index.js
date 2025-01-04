@@ -4,6 +4,8 @@
   * Task Complexity: 1 of 5
 */
 const truncate = (str, char) => {
+  return str.slice(0, char)
 }
+
 
 module.exports = truncate;

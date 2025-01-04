@@ -6,7 +6,11 @@
  * @returns {Array}
  */
 const values = (data) => {
-    throw new Error('Put your solution here');
+    const result = []
+    for (let values in data) {
+        result.push(data[values])
+    }
+    return result;
 }
 
 module.exports = values;

@@ -7,7 +7,13 @@
  * @returns {Object}
  */
 const pick = (data, paths) => {
-    throw new Error('Put your solution here');
+    let result = {};
+    for (let key of paths) {
+        if (key in data) {
+            result[key] = data[key]
+        }
+    }
+    return result;
 }
 
 module.exports = pick;

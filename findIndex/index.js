@@ -7,7 +7,13 @@
  * @returns {Array}
  */
 const findIndex = (array, element) => {
-    throw new Error('Put your solution here');
+    let res = -1;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] == element) {
+            return i
+        }
+    }
+    return res;
 }
 /* DONT USE INDEX OF METHOD */
 

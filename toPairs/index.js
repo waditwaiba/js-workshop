@@ -6,7 +6,13 @@
   * @returns {Array}
 */
 const toPairs = (obj) => {
-    throw new Error('Put your solution here');
+  const result = []
+  for (let key in obj) {
+    result.push([key, obj[key]])
+  }
+  return result
 }
 
 module.exports = toPairs
+
+

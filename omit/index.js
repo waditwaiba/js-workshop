@@ -7,7 +7,14 @@
  * @returns {Object}
  */
 const omit = (data, paths) => {
-    throw new Error('Put your solution here');
+    const result = {};
+    for (let key in data) {
+        const value = data[key];
+        if (!paths.includes(key)) {
+            result[key] = data[key];
+        }
+    }
+    return result
 }
 
 module.exports = omit

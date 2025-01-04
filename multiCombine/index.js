@@ -6,6 +6,28 @@
 */
 
 const multi_combine = (characters, numbers, vowels) => {
+  let result = '';
+  const maxLength = Math.max(characters.length, numbers.length, vowels.length);
+
+  for (let i = 0; i < maxLength; i++) {
+    if (!characters[i]) {
+      result = result
+    } else {
+      result += characters[i];
+    }
+    if (!numbers[i]) {
+      result = result
+    } else {
+      result += numbers[i];
+    }
+    if (!vowels[i]) {
+      result = result
+    } else {
+      result += vowels[i];
+    }
+  }
+  return result;
 }
 
-module.exports = multi_combine
+// Do not edit below this line
+module.exports = multi_combine;

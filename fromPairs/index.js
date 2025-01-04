@@ -6,7 +6,15 @@
   * @returns {Array} 
 */
 const fromPairs = (array) => {
-    throw new Error('Put your solution here');
-}
+  let result = {}
+  for (let i of array) {
+    let key = i[0];
+    let value = i[1]
+    result[key] = value
+  }
 
+  return result;
+}
 module.exports = fromPairs;
+
+

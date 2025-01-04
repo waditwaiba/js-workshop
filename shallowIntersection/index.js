@@ -7,7 +7,16 @@
   * @returns {Object} 
 */
 const intersection = (firstObject, secondObject) => {
-    throw new Error(`put your solution here ${firstObject}, ${secondObject}`);
+  let result = {};
+  for (let key in firstObject) {
+    if (firstObject[key] === secondObject[key]) {
+      result[key] = firstObject[key]
+    }
+  }
+  return result;
 };
 
+
 module.exports = intersection;
+
+

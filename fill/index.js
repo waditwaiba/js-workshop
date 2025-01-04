@@ -4,6 +4,11 @@
   * Task Complexity: 1 of 5 
 */
 const fill = (arraySize, value) => {
-}
+  result = []
+  for (let i = 0; i < arraySize; i++) {
+    result.push(value)
+  }
 
+  return result
+}
 module.exports = fill;

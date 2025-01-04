@@ -6,8 +6,12 @@
   * @returns {Array} 
 */
 const reverse = (array) => {
-    throw new Error('Put your solution here');
+  let res = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+
+    res.push(array[i]);
+  }
+  return res;
 }
 
-
-module.exports = reverse;
+module.exports = reverse

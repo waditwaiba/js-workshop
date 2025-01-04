@@ -7,10 +7,14 @@
  * @returns {Array}
  */
 const difference = (array1, array2) => {
-    throw new Error('Put your solution here');
+    let result = []
+    for (let i = 0; i < array1.length; i++) {
+        if (!array2.includes(array1[i])) {
+            result.push(array1[i])
+        }
+    }
+    return result;
 }
-const ar1 = [2, 1];
-const ar2 = [2, 3];
 
 
 module.exports = difference

@@ -7,7 +7,14 @@
  * @returns {Array}
  */
 const pull = (array, values) => {
-    throw new Error('Put your solution here');
+   let result = []
+   for (let i of array) {
+      if (!values.includes(i)) {
+         result.push(i)
+      }
+
+   }
+   return result
 }
 
 module.exports = pull;

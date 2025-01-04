@@ -6,7 +6,14 @@
  * @returns {Object} - Returns the new inverted object.
  */
 const invert = (data) => {
-    throw new Error('Put your solution here');
+    let result = {};
+    for (let key in data) {
+        if (data.hasOwnProperty(key)) {
+            result[data[key]] = key;
+        }
+    }
+    return result;
+
 }
 
 module.exports = invert;

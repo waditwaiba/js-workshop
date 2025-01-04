@@ -21,3 +21,4 @@ describe("pick", () => {
     expect(pick({ a: 1, b: "two", c: true }, ["b"])).toEqual({ b: "two" });
   });
 });
+//
