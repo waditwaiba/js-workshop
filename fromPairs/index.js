@@ -6,6 +6,8 @@
   * @returns {Array} 
 */
 const fromPairs = (array) => {
+  console.log(Object.fromEntries(array));
+  return Object.fromEntries(array)
 }
 
 module.exports = fromPairs;

@@ -7,7 +7,13 @@
   * @returns {Object} 
 */
 const intersection = (firstObject, secondObject) => {
-  return firstObject.filter(el => secondObject.includes(el))
+  let result = {};
+  for (let key in firstObject) {
+    if (key in secondObject) {
+      result[key] = secondObject[key]
+    }
+  }
+  return result
 };
 
 module.exports = intersection;

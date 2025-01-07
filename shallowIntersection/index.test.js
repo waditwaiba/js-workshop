@@ -1,4 +1,4 @@
-import { intersection } from ".";
+const intersection = require(".");
 
 describe("intersection", () => {
   test("should return the shallow intersection of two objects", () => {

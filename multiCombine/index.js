@@ -6,6 +6,15 @@
 */
 
 const multi_combine = (characters, numbers, vowels) => {
+  let result = "";
+  const max = Math.max(characters.length, numbers.length, vowels.length)
+  for (let i = 0; i < max; i++) {
+    const character = characters[i] || ""
+    const number = numbers[i] || ""
+    const vowel = vowels[i] || ""
+    result += character + number + vowel
+  }
+  return result
 }
 
 module.exports = multi_combine
